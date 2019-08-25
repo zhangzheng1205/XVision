@@ -151,7 +151,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="VisionBaseStruct.cpp" />
+    <ClCompile Include="VisionBaseStruct.c" />
+    <ClCompile Include="xvision.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="xvision.h" />

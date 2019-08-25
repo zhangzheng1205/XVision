@@ -1,11 +1,27 @@
 ﻿// VisionBaseStruct.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
-#include <iostream>
+#include "xvision.h"
+
+//求直线交点
+extern void IntersectionLinesFloat(LineFloat* line1, LineFloat* line2, PointFloat* intersection);
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    LineFloat line1;
+    line1.start.x = 168.61;
+    line1.start.y = 568.82;
+    line1.end.x = 887.63;
+    line1.end.y = 543.81;
+    LineFloat line2;
+    line2.start.x = 173.18;
+    line2.start.y = 647.44;
+    line2.end.x = 790.82;
+    line2.end.y = 589.56;
+    PointFloat intersection;
+    IntersectionLinesFloat(&line1, &line2, &intersection);
+
+    
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
